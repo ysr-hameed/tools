@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "TikTok Shop Fee Calculator — See Exactly How Much You Keep Per Sale (2026)",
   description:
-    "Free TikTok Shop Fee Calculator for 2026. See the referral fee, 2.9% + $0.30 processing, and net you keep per sale by category. No sign-up.",
+    "Free TikTok Shop Fee Calculator for 2026. See the 6% unified referral fee (processing included) and net you keep per sale by category. No sign-up.",
   alternates: {
     canonical: "https://tools.slyxup.in/tiktok-shop-fee-calculator/",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title:
       "TikTok Shop Fee Calculator — See Exactly How Much You Keep Per Sale (2026)",
     description:
-      "Work out your TikTok Shop referral fee and processing costs, and how much of each sale you actually keep. Free, no sign-up.",
+      "Work out your TikTok Shop referral fee and how much of each sale you actually keep. Free, no sign-up.",
     url: "https://tools.slyxup.in/tiktok-shop-fee-calculator/",
     type: "website",
   },
@@ -32,11 +32,11 @@ const schema = {
       applicationCategory: "FinanceApplication",
       operatingSystem: "Any",
       description:
-        "Free TikTok Shop Fee Calculator to estimate referral fees, payment processing, and net profit per sale by category.",
+        "Free TikTok Shop Fee Calculator to estimate the 2026 unified referral fee and net profit per sale by category.",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
         "Referral fee by category",
-        "2.9% + $0.30 payment processing",
+        "Processing included in referral fee",
         "Optional shipping costs",
         "Net profit and % kept per sale",
         "No sign-up required",
@@ -62,7 +62,7 @@ const schema = {
           name: "How much does TikTok Shop charge sellers?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "TikTok Shop charges a referral fee of about 5–6% depending on category, plus a 2.9% + $0.30 payment processing fee. So on a $50 sale you keep roughly $45–$46 before shipping.",
+            text: "TikTok Shop charges a unified 6% referral fee on most US categories in 2026 (5% for jewelry), with payment processing included. So on a $50 sale you keep $47.00 before shipping.",
           },
         },
         {
@@ -70,7 +70,7 @@ const schema = {
           name: "What is the TikTok Shop referral fee?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The referral fee is a percentage of each sale that varies by category. Most categories are around 6%, with electronics and books closer to 5%.",
+            text: "The referral fee is 6% of each US sale across most categories, 5% for jewelry. Payment processing is bundled — there is no separate transaction fee.",
           },
         },
         {
@@ -78,7 +78,7 @@ const schema = {
           name: "How much do you keep from a TikTok Shop sale?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "After the ~6% referral fee and 2.9% + $0.30 processing, you keep roughly 91–92% of the sale price before shipping and your product cost.",
+            text: "After the 6% unified referral fee you keep 94% of the sale price before shipping and your product cost — $47.00 on a $50 sale.",
           },
         },
       ],
@@ -87,12 +87,13 @@ const schema = {
 };
 
 const feeTable = [
-  ["Beauty", "6%", "$47.70"],
-  ["Fashion", "6%", "$47.70"],
-  ["Home & Living", "6%", "$47.70"],
-  ["General", "6%", "$47.70"],
-  ["Electronics", "5%", "$48.25"],
-  ["Books", "5%", "$48.25"],
+  ["Beauty", "6%", "$47.00"],
+  ["Fashion", "6%", "$47.00"],
+  ["Home & Living", "6%", "$47.00"],
+  ["General", "6%", "$47.00"],
+  ["Electronics", "6%", "$47.00"],
+  ["Books", "6%", "$47.00"],
+  ["Jewelry", "5%", "$47.50"],
 ];
 
 export default function TikTokShopFeeCalculatorPage() {
@@ -111,8 +112,8 @@ export default function TikTokShopFeeCalculatorPage() {
         </h1>
         <p className="mt-4 text-muted-foreground">
           TikTok Shop looks free until you price a product and watch the fees
-          eat the margin. This tool shows the referral fee, payment processing,
-          and exactly how much you keep per sale.
+          eat the margin. This tool shows the 2026 unified referral fee and
+          exactly how much you keep per sale.
         </p>
       </div>
 
@@ -123,16 +124,12 @@ export default function TikTokShopFeeCalculatorPage() {
           <p className="font-medium text-foreground">TL;DR</p>
           <ul className="mt-2 list-inside list-disc space-y-1 text-sm">
             <li>
-              Most categories carry a <strong>~6% referral fee</strong>; a few
-              (electronics, books) run closer to <strong>5%</strong>.
+              Most US categories carry a <strong>6% unified referral fee</strong>;
+              jewelry runs <strong>5%</strong>. Processing is included.
             </li>
             <li>
-              Every sale also pays <strong>2.9% + $0.30</strong> in payment
-              processing.
-            </li>
-            <li>
-              On a $50 sale you keep about <strong>$45–$46</strong> before
-              shipping and your product cost.
+              On a $50 sale you keep <strong>$47.00</strong> before shipping
+              and your product cost — <strong>94%</strong>.
             </li>
             <li>
               Price your products so your <strong>target margin</strong> still
@@ -146,13 +143,13 @@ export default function TikTokShopFeeCalculatorPage() {
             How the calculation works
           </h2>
           <p className="mt-3">
-            Your net is the sale price minus three things: the{" "}
-            <strong>referral fee</strong> (a percentage of the sale that varies
-            by category), the <strong>payment processing fee</strong> (2.9% +
-            $0.30), and any <strong>shipping</strong> you cover yourself:
+            Your net is the sale price minus two things: the{" "}
+            <strong>unified referral fee</strong> (6% most categories, 5%
+            jewelry, processing included) and any <strong>shipping</strong> you
+            cover yourself:
           </p>
           <pre className="mt-3 overflow-x-auto rounded-lg border bg-muted/40 p-4 font-mono text-sm text-foreground">
-            Net = Price − Referral (≈6%) − Processing (2.9% + $0.30) − Shipping
+            Net = Price − Referral (6%, processing included) − Shipping
           </pre>
           <p className="mt-3">
             Pick your category to apply the right referral rate, add your
@@ -200,18 +197,18 @@ export default function TikTokShopFeeCalculatorPage() {
                 $30 beauty product
               </p>
               <p className="mt-1 text-sm">
-                $1.80 referral (6%) + $1.17 processing (2.9% + $0.30). You keep
-                about <strong>$27.03</strong> before shipping and product cost —
-                roughly 90%.
+                $1.80 referral (6%, processing included). You keep about{" "}
+                <strong>$28.20</strong> before shipping and product cost —
+                94%.
               </p>
             </div>
             <div className="rounded-lg border p-4">
               <p className="font-medium text-foreground">
-                $120 electronics item
+                $120 jewelry item
               </p>
               <p className="mt-1 text-sm">
-                $6 referral (5%) + $3.78 processing. You keep about{" "}
-                <strong>$110.22</strong> before shipping and product cost.
+                $6.00 referral (5%). You keep about{" "}
+                <strong>$114.00</strong> before shipping and product cost.
               </p>
             </div>
           </div>
@@ -227,7 +224,7 @@ export default function TikTokShopFeeCalculatorPage() {
                 Are TikTok Shop fees worth it?
               </h3>
               <p className="mt-1">
-                For most sellers yes — the ~91% you keep after fees is on par
+                For most sellers yes — the 94% you keep after fees is on par
                 with other marketplaces, and the built-in discovery is the real
                 draw. It only stops making sense on thin-margin items.
               </p>
@@ -246,9 +243,9 @@ export default function TikTokShopFeeCalculatorPage() {
                 How do I set a profitable price on TikTok Shop?
               </h3>
               <p className="mt-1">
-                Start from your target profit, add the ~6% referral, the 2.9% +
-                $0.30 processing, and shipping, then back into a price. This
-                calculator does that math for you.
+                Start from your target profit, add the 6% referral and
+                shipping, then back into a price. This calculator does that
+                math for you.
               </p>
             </div>
           </div>
@@ -260,11 +257,11 @@ export default function TikTokShopFeeCalculatorPage() {
           </h2>
           <p className="mt-3 text-sm">
             Fee rates are based on TikTok Shop&apos;s published US seller fee
-            schedule and standard payment processing rates, as reported by
-            TikTok Shop and industry sources. Fees can vary by region, promo, and
-            sales channel (affiliate vs organic), so treat all figures as
-            estimates. This tool is for informational purposes only and is not
-            affiliated with or endorsed by TikTok.
+            schedule for 2026 (6% unified referral, 5% jewelry, processing
+            included). Fees can vary by region, promo, and sales channel
+            (affiliate vs organic), so treat all figures as estimates. This
+            tool is for informational purposes only and is not affiliated with
+            or endorsed by TikTok.
           </p>
         </div>
 
@@ -283,9 +280,9 @@ export default function TikTokShopFeeCalculatorPage() {
               variant="outline"
               size="sm"
               nativeButton={false}
-              render={<Link href="/tiktok-money-calculator/" />}
+              render={<Link href="/youtube-shorts-calculator/" />}
             >
-              TikTok Money Calculator
+              YouTube Shorts Calculator
             </Button>
             <Button
               variant="outline"

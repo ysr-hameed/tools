@@ -280,9 +280,9 @@ export default function YouTubeShortsCalculatorPage() {
               variant="outline"
               size="sm"
               nativeButton={false}
-              render={<Link href="/youtube-money-calculator/" />}
+              render={<Link href="/twitch-earnings-calculator/" />}
             >
-              YouTube Money Calculator
+              Twitch Earnings Calculator
             </Button>
             <Button
               variant="outline"

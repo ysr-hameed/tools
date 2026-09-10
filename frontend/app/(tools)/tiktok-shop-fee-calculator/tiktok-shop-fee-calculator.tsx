@@ -19,9 +19,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const PROCESSING_RATE = 0.029;
-const PROCESSING_FLAT = 0.3;
-
+// 2026 US unified referral fee — payment processing is bundled, no separate charge.
 const REFERRAL_RATES: Record<string, number> = {
   general: 0.06,
   beauty: 0.06,
@@ -29,9 +27,10 @@ const REFERRAL_RATES: Record<string, number> = {
   home: 0.06,
   sports: 0.06,
   toys: 0.06,
-  electronics: 0.05,
-  books: 0.05,
+  electronics: 0.06,
+  books: 0.06,
   food: 0.06,
+  jewelry: 0.05,
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -44,6 +43,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   electronics: "Electronics",
   books: "Books & Media",
   food: "Food & Beverage",
+  jewelry: "Jewelry",
 };
 
 function formatUsd(value: number): string {
@@ -65,8 +65,7 @@ export function TikTokShopFeeCalculator() {
   const saleTotal = price * quantity;
   const referralRate = REFERRAL_RATES[category];
   const referralFee = saleTotal * referralRate;
-  const processingFee = saleTotal * PROCESSING_RATE + PROCESSING_FLAT;
-  const totalFees = referralFee + processingFee + shipping;
+  const totalFees = referralFee + shipping;
   const net = saleTotal - totalFees;
   const keepPercent = saleTotal > 0 ? (net / saleTotal) * 100 : 0;
 
@@ -85,7 +84,7 @@ export function TikTokShopFeeCalculator() {
         </CardTitle>
         <CardDescription>
           Work out exactly how much you keep per TikTok Shop sale after the
-          referral fee and payment processing, by category.
+          2026 unified referral fee (processing included), by category.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
@@ -130,6 +129,7 @@ export function TikTokShopFeeCalculator() {
                 <SelectItem value="electronics">Electronics</SelectItem>
                 <SelectItem value="books">Books & Media</SelectItem>
                 <SelectItem value="food">Food & Beverage</SelectItem>
+                <SelectItem value="jewelry">Jewelry</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -163,7 +163,9 @@ export function TikTokShopFeeCalculator() {
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             <div className="rounded-lg border p-3">
-              <p className="text-sm text-muted-foreground">Referral fee</p>
+              <p className="text-sm text-muted-foreground">
+                Referral fee (processing included)
+              </p>
               <p className="mt-1 font-mono text-lg font-semibold">
                 −{formatUsd(referralFee)}
               </p>
@@ -171,15 +173,6 @@ export function TikTokShopFeeCalculator() {
                 {Math.round(referralRate * 100)}% in{" "}
                 {CATEGORY_LABELS[category]}
               </p>
-            </div>
-            <div className="rounded-lg border p-3">
-              <p className="text-sm text-muted-foreground">
-                Payment processing
-              </p>
-              <p className="mt-1 font-mono text-lg font-semibold">
-                −{formatUsd(processingFee)}
-              </p>
-              <p className="text-xs text-muted-foreground">2.9% + $0.30</p>
             </div>
             <div className="rounded-lg border p-3">
               <p className="text-sm text-muted-foreground">Shipping</p>

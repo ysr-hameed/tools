@@ -2,17 +2,14 @@ import Link from "next/link";
 import {
   ArrowRight,
   Calculator,
-  Camera,
   Clapperboard,
   Compass,
   Gamepad2,
   Lock,
   MousePointerClick,
-  PlaySquare,
   ShieldCheck,
   Sparkles,
   Store,
-  Gavel,
   Zap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,53 +17,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const featured = {
-  title: "TikTok Money Calculator",
-  href: "/tiktok-money-calculator",
+  title: "TikTok Shop Fee Calculator",
+  href: "/tiktok-shop-fee-calculator",
   description:
-    "Estimate your TikTok earnings across the Creator Fund, brand deals, and LIVE gifts — free, no sign-up.",
-  highlights: ["Creator Fund & RPM", "Brand deal rates", "LIVE gifts"],
+    "See exactly how much you keep per TikTok Shop sale after the 6% referral fee — free, no sign-up.",
+  highlights: ["6% unified fee", "Net per sale", "Margin planning"],
 };
 
 const tools = [
   {
-    title: "Whatnot Fee Calculator",
-    href: "/whatnot-fee-calculator",
-    description:
-      "See how much you keep per Whatnot live sale after commission and processing.",
-    icon: Gavel,
-    featured: false,
-  },
-  {
     title: "TikTok Shop Fee Calculator",
     href: "/tiktok-shop-fee-calculator",
     description:
-      "See how much you keep per TikTok Shop sale after referral fees and processing.",
+      "See how much you keep per TikTok Shop sale after the 6% referral fee (processing included).",
     icon: Store,
-    featured: false,
-  },
-  {
-    title: "TikTok Money Calculator",
-    href: "/tiktok-money-calculator",
-    description:
-      "Estimate earnings from the Creator Fund, brand deals, and LIVE gifts.",
-    icon: Calculator,
     featured: true,
-  },
-  {
-    title: "YouTube Money Calculator",
-    href: "/youtube-money-calculator",
-    description:
-      "Estimate ad revenue, sponsorships, and channel memberships per month.",
-    icon: PlaySquare,
-    featured: false,
-  },
-  {
-    title: "Instagram Earnings Calculator",
-    href: "/instagram-earnings-calculator",
-    description:
-      "Estimate Reels bonuses, brand deals, and affiliate income.",
-    icon: Camera,
-    featured: false,
   },
   {
     title: "Twitch Earnings Calculator",
@@ -149,12 +114,13 @@ export default function Home() {
         <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 pb-16 pt-20 text-center sm:px-6 sm:pt-28">
           <p className="label mb-6 text-primary">Free · Fast · Private</p>
           <h1 className="max-w-3xl font-heading text-4xl font-semibold leading-tight tracking-tight text-balance sm:text-6xl">
-            Free online tools,{" "}
-            <span className="text-gradient">fast</span> and privacy-first.
+            TikTok Shop, Shorts & Twitch{" "}
+            <span className="text-gradient">calculators</span> — fast and private.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Slyxup Tools is a growing suite of free utilities — no sign-ups, no
-            bloat, no tracking. Everything runs right in your browser.
+            Free creator & seller calculators — TikTok Shop fees, YouTube
+            Shorts earnings, Twitch income. No sign-ups, no bloat, no tracking.
+            Everything runs right in your browser.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button
@@ -342,8 +308,8 @@ export default function Home() {
               <span className="text-gradient">#1 tool</span>
             </h2>
             <p className="mt-4 text-muted-foreground">
-              See how much TikTok pays per view and what you could earn each
-              month — in seconds.
+              See exactly how much you keep per TikTok Shop sale after fees —
+              in seconds.
             </p>
             <Button
               size="lg"

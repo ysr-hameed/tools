@@ -8,7 +8,7 @@ import "./globals.css";
 const SITE_URL = "https://tools.slyxup.in";
 const SITE_NAME = "Slyxup Tools";
 const SITE_DESCRIPTION =
-  "Free, fast and privacy-friendly online utilities — no sign-ups, no bloat.";
+  "Free TikTok Shop, YouTube Shorts, and Twitch calculators — fast, private, no sign-ups.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   keywords: [
-    "free online tools",
-    "online utilities",
-    "tiktok money calculator",
+    "tiktok shop fee calculator",
+    "youtube shorts calculator",
+    "twitch earnings calculator",
     "free calculators",
     "browser tools",
     "privacy friendly tools",

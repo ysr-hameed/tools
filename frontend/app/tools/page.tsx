@@ -1,52 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Calculator, Camera, PlaySquare, Clapperboard, Gamepad2, Store, Gavel } from "lucide-react";
+import { ArrowRight, Clapperboard, Gamepad2, Store } from "lucide-react";
 import { articles } from "@/lib/articles";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Tools",
+  title: "Free Creator & Seller Calculators — TikTok Shop, Shorts, Twitch",
   description:
-    "Browse the full collection of free, browser-based tools from Slyxup.",
+    "Browse free TikTok Shop fee, YouTube Shorts earnings, and Twitch earnings calculators. Fast, private, no sign-up.",
 };
 
 const availableTools = [
   {
-    title: "Whatnot Fee Calculator",
-    href: "/whatnot-fee-calculator",
-    description:
-      "See how much you keep per Whatnot live sale after the seller commission and 2.9% processing.",
-    icon: Gavel,
-  },
-  {
     title: "TikTok Shop Fee Calculator",
     href: "/tiktok-shop-fee-calculator",
     description:
-      "See exactly how much you keep per TikTok Shop sale after the referral fee and 2.9% + $0.30 processing, by category.",
+      "See exactly how much you keep per TikTok Shop sale after the 6% referral fee (processing included), by category.",
     icon: Store,
-  },
-  {
-    title: "TikTok Money Calculator",
-    href: "/tiktok-money-calculator",
-    description:
-      "Estimate your TikTok earnings across the Creator Fund, brand deals, and LIVE gifts based on views, followers, niche, and region.",
-    icon: Calculator,
-  },
-  {
-    title: "Instagram Earnings Calculator",
-    href: "/instagram-earnings-calculator",
-    description:
-      "Estimate your Instagram earnings from Reels bonuses, brand deals, and affiliate income based on followers, niche, and region.",
-    icon: Camera,
-  },
-  {
-    title: "YouTube Money Calculator",
-    href: "/youtube-money-calculator",
-    description:
-      "Estimate your YouTube ad revenue from CPM/RPM, sponsorships, and memberships based on views, niche, and region.",
-    icon: PlaySquare,
   },
   {
     title: "YouTube Shorts Money Calculator",

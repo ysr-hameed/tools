@@ -14,8 +14,8 @@ const columns = [
   {
     title: "Guides",
     links: [
-      { label: "How much does TikTok pay?", href: "/how-much-does-tiktok-pay" },
-      { label: "Views to make $1,000", href: "/how-many-views-to-make-1000-on-tiktok" },
+      { label: "TikTok Shop fees", href: "/how-much-are-tiktok-shop-fees" },
+      { label: "Shorts RPM", href: "/youtube-shorts-rpm-per-1000-views" },
     ],
   },
   {
