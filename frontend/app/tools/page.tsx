@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BadgeDollarSign, Clapperboard, Gamepad2, Store } from "lucide-react";
+import { ArrowRight, BadgeDollarSign, Bike, Clapperboard, Gamepad2, Shirt, Store } from "lucide-react";
 import { articles } from "@/lib/articles";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Free Creator & Seller Calculators — Shop Fees, Shorts, Twitch, Rates",
+  title: "Free Creator, Seller & Gig Calculators — 6 Tools",
   description:
-    "Browse free TikTok Shop fee, YouTube Shorts earnings, Twitch earnings, and influencer rate calculators. Fast, private, no sign-up.",
+    "Browse free TikTok Shop fee, Shorts earnings, Twitch, influencer rate, POD profit, and DoorDash pay calculators. Fast, private, no sign-up.",
 };
 
 const availableTools = [
@@ -40,6 +40,20 @@ const availableTools = [
     description:
       "Price sponsored posts by followers, platform, niche, and engagement — with usage rights markup.",
     icon: BadgeDollarSign,
+  },
+  {
+    title: "Print on Demand Profit Calculator",
+    href: "/print-on-demand-profit-calculator",
+    description:
+      "See per-item profit, margin, and monthly income after base cost and marketplace fees.",
+    icon: Shirt,
+  },
+  {
+    title: "DoorDash Pay Calculator",
+    href: "/doordash-pay-calculator",
+    description:
+      "See true net hourly pay after gas and vehicle costs — per delivery and per mile.",
+    icon: Bike,
   },
 ];
 

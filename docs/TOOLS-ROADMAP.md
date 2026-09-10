@@ -260,20 +260,22 @@ Google ranks tools on **intent + authority + low competition**. These rules drov
 
 ## CLUSTER 6 — Side Income / Gig (6 tools)
 
-### 42. Print on Demand Profit Calculator
+### 42. Print on Demand Profit Calculator ✅ DONE
 - **What it does:** Retail price − base cost − fees (Etsy/POD) → per-item profit & break-even.
 - **Keyword:** "print on demand profit calculator" — LOW comp, hot niche.
 - **Feasibility:** ✅
+- **Guides:** `/print-on-demand-profit-per-shirt`, `/is-print-on-demand-worth-it`, `/etsy-pod-fees-vs-own-store` ✅
 
 ### 43. Dropshipping Profit Calculator
 - **What it does:** Price − product − shipping − ad cost → margin; profitable bid/CPC.
 - **Keyword:** "dropshipping profit calculator" — LOW-moderate.
 - **Feasibility:** ✅
 
-### 44. DoorDash/Uber Net Pay Calculator
+### 44. DoorDash/Uber Net Pay Calculator ✅ DONE
 - **What it does:** Trips × fare − fees − gas − miles → net hourly pay.
 - **Keyword:** "doordash pay calculator" / "how much doordash drivers make" — LOW comp, huge intent.
 - **Feasibility:** ✅
+- **Guides:** `/how-much-do-doordash-drivers-make`, `/doordash-pay-per-delivery`, `/doordash-vs-uber-eats-pay` ✅
 
 ### 45. Airbnb Income Estimator
 - **What it does:** Nights × nightly rate × occupancy − Airbnb fee → monthly/annual net.

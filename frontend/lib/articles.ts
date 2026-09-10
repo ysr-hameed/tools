@@ -136,4 +136,64 @@ export const articles: Article[] = [
     readTime: "6 min read",
     href: "/instagram-vs-tiktok-vs-youtube-rates",
   },
+  {
+    title: "Print on Demand Profit Per Shirt (2026 Real Numbers)",
+    slug: "print-on-demand-profit-per-shirt",
+    description:
+      "How much profit per POD shirt in 2026? Real base costs, fees, and margins for tees, hoodies, and mugs.",
+    category: "Print on Demand",
+    datePublished: "2026-09-10",
+    readTime: "5 min read",
+    href: "/print-on-demand-profit-per-shirt",
+  },
+  {
+    title: "Is Print on Demand Worth It? Profit vs Reality (2026)",
+    slug: "is-print-on-demand-worth-it",
+    description:
+      "Is print on demand worth it in 2026? Real margins, costs, and who actually makes money with POD.",
+    category: "Print on Demand",
+    datePublished: "2026-09-10",
+    readTime: "6 min read",
+    href: "/is-print-on-demand-worth-it",
+  },
+  {
+    title: "Etsy POD Fees vs Own Store: Where Should You Sell? (2026)",
+    slug: "etsy-pod-fees-vs-own-store",
+    description:
+      "Etsy POD fees vs your own store in 2026 — real fee math, traffic costs, and where sellers keep more.",
+    category: "Print on Demand",
+    datePublished: "2026-09-10",
+    readTime: "5 min read",
+    href: "/etsy-pod-fees-vs-own-store",
+  },
+  {
+    title: "How Much Do DoorDash Drivers Make? (2026 Real Pay)",
+    slug: "how-much-do-doordash-drivers-make",
+    description:
+      "How much do DoorDash drivers make in 2026? Real gross and net hourly pay, per-delivery rates, and top earner tactics.",
+    category: "Gig Work",
+    datePublished: "2026-09-10",
+    readTime: "6 min read",
+    href: "/how-much-do-doordash-drivers-make",
+  },
+  {
+    title: "DoorDash Pay Per Delivery (2026 Base, Tips & Peak Pay)",
+    slug: "doordash-pay-per-delivery",
+    description:
+      "DoorDash pay per delivery in 2026 — base pay, tips, and Peak Pay broken down with the $2/mile rule.",
+    category: "Gig Work",
+    datePublished: "2026-09-10",
+    readTime: "5 min read",
+    href: "/doordash-pay-per-delivery",
+  },
+  {
+    title: "DoorDash vs Uber Eats Pay (2026: Which Pays More?)",
+    slug: "doordash-vs-uber-eats-pay",
+    description:
+      "DoorDash vs Uber Eats pay in 2026 — real hourly medians, base pay, tips, and which app to run first.",
+    category: "Gig Work",
+    datePublished: "2026-09-10",
+    readTime: "6 min read",
+    href: "/doordash-vs-uber-eats-pay",
+  },
 ];

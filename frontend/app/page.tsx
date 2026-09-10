@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   ArrowRight,
   BadgeDollarSign,
+  Bike,
   Calculator,
   Clapperboard,
   Compass,
@@ -9,6 +10,7 @@ import {
   Lock,
   MousePointerClick,
   ShieldCheck,
+  Shirt,
   Sparkles,
   Store,
   Zap,
@@ -56,6 +58,22 @@ const tools = [
     description:
       "Price brand deals by followers, platform, niche, and engagement.",
     icon: BadgeDollarSign,
+    featured: false,
+  },
+  {
+    title: "Print on Demand Profit Calculator",
+    href: "/print-on-demand-profit-calculator",
+    description:
+      "Per-item profit, margin, and monthly income after base and fees.",
+    icon: Shirt,
+    featured: false,
+  },
+  {
+    title: "DoorDash Pay Calculator",
+    href: "/doordash-pay-calculator",
+    description:
+      "True net hourly pay after gas and vehicle costs.",
+    icon: Bike,
     featured: false,
   },
 ];
@@ -123,13 +141,14 @@ export default function Home() {
         <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 pb-16 pt-20 text-center sm:px-6 sm:pt-28">
           <p className="label mb-6 text-primary">Free · Fast · Private</p>
           <h1 className="max-w-3xl font-heading text-4xl font-semibold leading-tight tracking-tight text-balance sm:text-6xl">
-            Shop fees, Shorts, Twitch & brand{" "}
-            <span className="text-gradient">rates</span> — fast and private.
+            Shop fees, Shorts, Twitch, POD & gig{" "}
+            <span className="text-gradient">pay</span> — fast and private.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Free creator & seller calculators — TikTok Shop fees, YouTube
-            Shorts earnings, Twitch income, brand deal rates. No sign-ups, no
-            bloat, no tracking. Everything runs right in your browser.
+            Free creator, seller & gig calculators — TikTok Shop fees, Shorts
+            earnings, Twitch income, brand rates, POD profit, DoorDash pay.
+            No sign-ups, no bloat, no tracking. Everything runs right in your
+            browser.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button
