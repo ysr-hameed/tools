@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Clapperboard, Gamepad2, Store } from "lucide-react";
+import { ArrowRight, BadgeDollarSign, Clapperboard, Gamepad2, Store } from "lucide-react";
 import { articles } from "@/lib/articles";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Free Creator & Seller Calculators — TikTok Shop, Shorts, Twitch",
+  title: "Free Creator & Seller Calculators — Shop Fees, Shorts, Twitch, Rates",
   description:
-    "Browse free TikTok Shop fee, YouTube Shorts earnings, and Twitch earnings calculators. Fast, private, no sign-up.",
+    "Browse free TikTok Shop fee, YouTube Shorts earnings, Twitch earnings, and influencer rate calculators. Fast, private, no sign-up.",
 };
 
 const availableTools = [
@@ -33,6 +33,13 @@ const availableTools = [
     description:
       "Estimate your monthly Twitch income from subscriptions (50% split), Bits, ads, and donations based on viewers and activity.",
     icon: Gamepad2,
+  },
+  {
+    title: "Influencer Rate Calculator",
+    href: "/influencer-rate-calculator",
+    description:
+      "Price sponsored posts by followers, platform, niche, and engagement — with usage rights markup.",
+    icon: BadgeDollarSign,
   },
 ];
 

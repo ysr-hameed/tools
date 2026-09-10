@@ -25,6 +25,7 @@ const routes: RouteConfig[] = [
   { path: "/tiktok-shop-fee-calculator", priority: 0.9, changeFrequency: "monthly" },
   { path: "/youtube-shorts-calculator", priority: 0.9, changeFrequency: "monthly" },
   { path: "/twitch-earnings-calculator", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/influencer-rate-calculator", priority: 0.9, changeFrequency: "monthly" },
   { path: "/about", priority: 0.5, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.5, changeFrequency: "monthly" },
   { path: "/privacy", priority: 0.2, changeFrequency: "yearly" },

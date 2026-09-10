@@ -106,4 +106,34 @@ export const articles: Article[] = [
     readTime: "6 min read",
     href: "/is-tiktok-shop-worth-it",
   },
+  {
+    title: "How Much Should I Charge Brands? (2026 Creator Rates)",
+    slug: "how-much-should-i-charge-brands",
+    description:
+      "Real 2026 brand deal rates by follower count, niche, and usage rights — with a free calculator.",
+    category: "Creator Rates",
+    datePublished: "2026-09-10",
+    readTime: "6 min read",
+    href: "/how-much-should-i-charge-brands",
+  },
+  {
+    title: "Influencer Rates Per 1,000 Followers (2026 Rate Card)",
+    slug: "influencer-rates-per-1000-followers",
+    description:
+      "2026 influencer rates per 1,000 followers by tier and platform — nano to mega, with real per-post benchmarks.",
+    category: "Creator Rates",
+    datePublished: "2026-09-10",
+    readTime: "5 min read",
+    href: "/influencer-rates-per-1000-followers",
+  },
+  {
+    title: "Instagram vs TikTok vs YouTube Rates (2026 Brand Deals)",
+    slug: "instagram-vs-tiktok-vs-youtube-rates",
+    description:
+      "Instagram vs TikTok vs YouTube influencer rates in 2026 — which platform pays most per post and why.",
+    category: "Creator Rates",
+    datePublished: "2026-09-10",
+    readTime: "6 min read",
+    href: "/instagram-vs-tiktok-vs-youtube-rates",
+  },
 ];

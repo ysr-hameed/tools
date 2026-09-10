@@ -59,11 +59,12 @@ Google ranks tools on **intent + authority + low competition**. These rules drov
 - **Affiliate:** DistroKid / music distribution.
 - **Feasibility:** ✅
 
-### 7. Influencer Sponsorship Rate Calculator
+### 7. Influencer Sponsorship Rate Calculator ✅ DONE
 - **What it does:** Follower tier × engagement × niche × platform → per-post brand deal price.
 - **Keyword:** "influencer rate calculator" / "how much should i charge brands" — LOW-moderate, high intent.
 - **Affiliate:** agency tools, contracts.
 - **Feasibility:** ✅
+- **Guides:** `/how-much-should-i-charge-brands`, `/influencer-rates-per-1000-followers`, `/instagram-vs-tiktok-vs-youtube-rates` ✅
 
 ### 8. Instagram Engagement Rate Calculator
 - **What it does:** ER formula (likes+comments+favorites ÷ followers × 100), benchmarked vs follower tier.
