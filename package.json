@@ -1,0 +1,14 @@
+{
+  "name": "tools.slyxup.in",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.13.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter tools-backend --filter frontend run dev",
+    "dev:frontend": "pnpm --filter frontend run dev",
+    "dev:backend": "pnpm --filter tools-backend run dev",
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "lint": "pnpm --filter frontend run lint"
+  }
+}

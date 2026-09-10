@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="f-teal" x1="6.6" y1="25.9" x2="25.3" y2="5.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08736F"/>
+      <stop offset="0.38" stop-color="#08AFA7"/>
+      <stop offset="0.72" stop-color="#25D8CE"/>
+      <stop offset="1" stop-color="#7AFFF7"/>
+    </linearGradient>
+    <linearGradient id="f-top" x1="7.5" y1="6.6" x2="23.1" y2="16.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07958F"/>
+      <stop offset="0.52" stop-color="#16C7BE"/>
+      <stop offset="1" stop-color="#64F4EB"/>
+    </linearGradient>
+    <linearGradient id="f-bottom" x1="7.8" y1="25" x2="21.3" y2="15.3" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#076E6A"/>
+      <stop offset="0.5" stop-color="#09AFA6"/>
+      <stop offset="1" stop-color="#3BE1D8"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M23 5.7 C20.6 4.3 17.1 4 13.8 4.8 C10.3 5.6 7.8 7.6 6.9 10 C6 12.6 7 15 9.4 16.6 C10.6 17.4 12.1 18.2 13.6 18.9 C14.6 19.4 15.2 20 15.1 20.7 C14.9 21.4 14.1 21.8 13.1 21.4 C11.9 21.1 10.9 20.4 9.8 19.9 L7.1 23.1 C8.3 24.1 9.4 24.9 10.8 25.5 C13.7 26.9 17.1 26.6 19.1 24.8 C21.1 23.1 21.4 20.4 20 18.4 C19 17 17.4 15.7 15.4 14.7 L12.6 13.2 C11.6 12.6 11.1 12.1 11.4 11.4 C11.7 10.4 12.8 9.8 14 9.7 C16.1 9.4 18.2 10 20.1 11.4 Z"
+    fill="url(#f-teal)"
+  />
+  <path
+    d="M23 5.7 C20.9 4.5 18.4 4.1 15.9 4.5 C13 5 10.6 6 9 7.7 C7.6 8.9 7 10.4 7 11.8 C6.8 13.8 7.9 15.4 9.8 16.7 C11 17.4 12.4 18.1 13.7 18.8 L15.4 14.7 L12.6 13.2 C11.6 12.6 11.1 12.1 11.4 11.4 C11.7 10.4 12.8 9.8 14 9.7 C16.1 9.4 18.2 10 20.1 11.4 Z"
+    fill="url(#f-top)"
+  />
+  <path
+    d="M23 5.7 L20.1 11.4 C21 11.9 21.7 12.5 22.3 13.2 C22.8 12.3 23.3 11.2 23.7 10 C24 8.6 23.9 7 23 5.7 Z"
+    fill="#21D2C8"
+  />
+  <path
+    d="M15.4 14.7 C17.3 15.6 18.8 16.7 19.8 18.2 C21.3 20.2 20.9 22.8 19 24.7 C17 26.6 13.7 26.9 10.8 25.5 C9.4 24.9 8.3 24.1 7.1 23.1 L9.8 19.9 C10.9 20.4 11.9 21.1 13.1 21.4 C14.1 21.8 14.9 21.4 15.1 20.7 C15.2 20 14.6 19.4 13.6 18.9 C12.4 18.3 11.1 17.6 9.8 16.7 Z"
+    fill="url(#f-bottom)"
+  />
+  <path
+    d="M12.6 13.2 C13.6 13.8 14.8 14.4 15.9 14.9 C17.6 15.7 18.9 16.7 19.8 17.9 L18.2 19.4 C17.4 18.4 16.2 17.5 14.9 16.9 L12.4 15.6 C11.8 15.3 11.3 14.9 11 14.6 Z"
+    fill="#078F88"
+    opacity="0.92"
+  />
+  <path
+    d="M15.9 14.9 C17.3 15.6 18.6 16.5 19.4 17.5 L18.2 18.8 C17.3 17.8 16.3 17.2 15.1 16.6 Z"
+    fill="#45E8DF"
+    opacity="0.9"
+  />
+  <path
+    d="M9.8 19.9 L7.1 23.1 C7.9 23.8 8.7 24.3 9.6 24.7 L11.1 22.3 Z"
+    fill="#086E6A"
+    opacity="0.65"
+  />
+  <path d="M23 5.7 L21.9 7.9" stroke="#D9FFFC" stroke-width="0.4" stroke-linecap="round" opacity="0.72"/>
+  <circle cx="23" cy="5.7" r="0.4" fill="#E8FFFD"/>
+</svg>
