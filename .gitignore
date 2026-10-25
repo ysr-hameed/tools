@@ -1,9 +1,42 @@
-node_modules/
+# Next.js
+.next/
+out/
+build/
 dist/
-.wrangler/
-.dev.vars
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment
 .env
-.env.*
-!.env.example
-*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 .DS_Store
+Thumbs.db
+
+# Turbo / pnpm
+.turbo/
+*.tsbuildinfo
+
+# Misc
+coverage/
